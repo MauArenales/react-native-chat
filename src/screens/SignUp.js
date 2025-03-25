@@ -22,7 +22,7 @@ export default function SignUp({ navigation }) {
   const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-
+  console.log('database: ' + JSON.stringify(database));
   const onHandleSignup = () => {
     if (email !== '' && password !== '') {
       createUserWithEmailAndPassword(auth, email, password)
